@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Recognition</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #status, #prediction, #result {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        video, canvas {
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet"></script>
+</head>
+<body>
+    <h1>Rock Paper Scissors Recognition</h1>
+    <div id="status">Loading model...</div>
+    <video id="video" width="640" height="480" autoplay></video>
+    <canvas id="canvas" width="640" height="480"></canvas>
+    <div><button onclick="captureAndPredict()">Capture and Predict</button></div>
+
+    <div id="prediction">Model's Prediction: </div>
+    <div id="result">Move to Win: </div>
+    <div id="result_img"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
