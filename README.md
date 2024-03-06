@@ -1,3 +1,5 @@
+https://www.youtube.com/watch?v=HpRDxikXIVs
+
 Real-time rock, paper, scissors recognition project and winning move suggestions
 
 Introduction: Before we begin the article, it is important to recognize the importance of the project, because creating a working game with winning recommendations is not the way this project is developing. The main idea of the project is to interact with the machine using knowledge taken from the advanced programming course and secondary sources, which are implemented using machine learning and deep learning. In my project, it is done by training a model using the dataset.
